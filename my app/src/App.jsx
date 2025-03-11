@@ -1,6 +1,6 @@
 import { Mydata } from "../data";
 import Header from "./components/Header/Header";
-import MainContent from "./MainContent/MainContent";
+import MainContent from "./components/MainContent/MainContent";
 // MainContent.propTypes = {
 //   image: propTypes.string.isRequired,
 // };
