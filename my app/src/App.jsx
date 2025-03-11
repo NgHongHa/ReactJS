@@ -1,10 +1,5 @@
+import { Mydata } from "../data";
 import logo from "./assets/logo-tuhoc.png";
-import pic1 from "./assets/pic1.png";
-import pic2 from "./assets/pic2.png";
-import pic3 from "./assets/pic3.png";
-import pic4 from "./assets/pic4.png";
-import PropTypes from "prop-types";
-
 function Header() {
   return (
     <>
@@ -40,25 +35,13 @@ function App() {
           <h2>Khái niệm chính trong React</h2>
           <ul>
             <MainContent
-              image={pic1}
-              title="Components"
-              desc=" xây dựng giao diện cơ bản - kết hợp nhiều thành phần để tạo nên ứng dụng."
+              image={Mydata[0].image}
+              title={Mydata[0].title}
+              desc={Mydata[0].desc}
             />
-            <MainContent
-              image={pic2}
-              title="JSX"
-              desc=" Kết hợp HTML và JavaScript để tạo giao diện động và mạnh mẽ."
-            />
-            <MainContent
-              image={pic3}
-              title="props"
-              desc="Truyền dữ liệu vào thành phần để làm nó linh hoạt và tái sử dụng"
-            />
-            <MainContent
-              image={pic4}
-              title="State"
-              desc=" Dữ liệu được React quản lý, khi thay đổi sẽ tự động làm mới giao diện"
-            />
+            <MainContent {...Mydata[1]} /> {/* thuộc tính trải spread */}
+            <MainContent {...Mydata[2]} />
+            <MainContent {...Mydata[3]} />
           </ul>
         </section>
       </main>
