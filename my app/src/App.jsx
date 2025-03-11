@@ -1,28 +1,6 @@
 import { Mydata } from "../data";
-import logo from "./assets/logo-tuhoc.png";
-function Header() {
-  return (
-    <>
-      <header>
-        <img src={logo} alt="Tự Học" />
-        <h1>React Tuhoc.cc</h1>
-        <p>
-          Học React - Khám phá cách xây dựng ứng dụng linh hoạt, hiện đại, và
-          đầy sáng tạo!
-        </p>
-      </header>
-    </>
-  );
-}
-function MainContent(props) {
-  return (
-    <li>
-      <img src={props.image} alt={props.title} />
-      <h2>{props.title}</h2>
-      <p>{props.desc}</p>
-    </li>
-  );
-}
+import Header from "./components/Header/Header";
+import MainContent from "./MainContent/MainContent";
 // MainContent.propTypes = {
 //   image: propTypes.string.isRequired,
 // };
