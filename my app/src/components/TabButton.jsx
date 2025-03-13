@@ -1,10 +1,14 @@
 export default function TabButton({ children }) {
+  function handleClick() {
+    alert("nút được bấm");
+  }
   return (
     <li>
-      <button>{children}</button>
+      <button onDoubleClick={handleClick}>{children}</button>
     </li>
   );
 }
+
 // export default function TabButton({ batky }) {
 //   return (
 //     <li>

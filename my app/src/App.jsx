@@ -24,10 +24,12 @@ function App() {
           </ul>
         </section>
         <section id="examples">
-          <h2>examples</h2>
+          <h2>Examples</h2>
           <menu>
-            <TabButton>nút cách 1</TabButton>
-            {/* <TabButton batky="nút cách 2"></TabButton> */}
+            <TabButton>Components</TabButton>
+            <TabButton>JSX</TabButton>
+            <TabButton>Props</TabButton>
+            <TabButton>State</TabButton>
           </menu>
         </section>
       </main>
